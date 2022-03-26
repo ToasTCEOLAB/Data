@@ -1,0 +1,54 @@
+[최종 정리본]
+
+
+1. 딥러닝 코드 
+
+	[기초 연구]
+	- Try 1 : 초기 실험을 위한 기초 연구 결과 
+	- Try 2 : 모델 선정에 따른 결과 (5개의 Model 비교)
+	- Try 3 : 선정한 모델 (InceptionResNet, ResNet50) 의 아이디어 기초 연구 결과 (Box 학습)
+	- Try 4 : Box 만으로 학습을 시켰을 때, 다양한 모양의 객체의 상태를 판단 하는 결과 
+	- Try 5 : 색으로만 판단함을 검증하는 연구 결과 - ( Train 유지 , Test 결과 )
+ 
+	[심화 연구]
+	- Try 6 :
+		- A, A2(구글넷), B : 원본 데이터 학습 결과 (여기서 모델 5개 추출) 
+		- C, C2 (구글넷), D : P 데이터 학습 결과
+		- E, E2(최종본 : PM 데이터 학습 결과 --> 추후 확정
+	- Try 7 :
+		- A : B 데이터 학습, PM으로 테스트 
+		- B : B + PM 데이터 학습 , PM으로 테스트 할거 
+ 
+
+
+	---> 앞으로 해야할 일
+		- TestSet으로 모델 평가 정규화
+
+2. 코드 보관 
+
+	- Image Augmentation 
+
+3. CSV 파일
+
+	- 딥러닝 결과값을 회귀 곡선으로 그리기 위한 CSV 파일
+
+		- InceptionRestNetV2
+		- Xception
+		- MobileNetV2
+		- ResNet50
+		- InceptionV3
+		-> 각 Net 마다 N, P, PM, B, PM + B 
+
+
+4. 딥러닝 데이터 셋
+	
+	- LearningSet N, P, PM, B -> Inside & Outside
+	- TestSet -> Inside & Outside
+
+
+5. 회귀 곡선 
+
+	- 모델 비교 막대그래프 -> 학습여부 확인 
+	- 각 모델과 데이터 셋마다의 회귀 곡선 
+
+	
