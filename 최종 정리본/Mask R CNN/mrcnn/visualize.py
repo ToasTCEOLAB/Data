@@ -309,8 +309,9 @@ def display_instances_predict_mask( file_name, image, boxes, masks, class_ids, c
     
     # temp_DIR = 'C:/Users/user/Desktop/LeeSac/Mask_RCNN/datasets/crosswalk/learning_datasets_inside_predict/'
     # temp_DIR = 'C:/Users/user/Desktop/LeeSac/Mask_RCNN/datasets/crosswalk/learning_datasets_outside_predict/'
-    temp_DIR = 'C:/Users/user/Desktop/LeeSac/Mask_RCNN/datasets/crosswalk_v2/testset_predict/'
-    
+#     temp_DIR = 'C:/Users/user/Desktop/LeeSac/Mask_RCNN/datasets/crosswalk_v2/testset_predict/'
+#     temp_DIR = 'C:/Users/user/Desktop/temp_img/original500/'
+    temp_DIR = 'C:/Users/user/Desktop/temp_img/original1000_out/'
     
     # Number of instances
     N = boxes.shape[0]
@@ -356,7 +357,7 @@ def display_instances_predict_mask( file_name, image, boxes, masks, class_ids, c
         if show_mask:
             masked_image = apply_mask(masked_image, mask, color)
         
-    ax.imshow(masked_image.astype(np.uint8))
+#     ax.imshow(masked_image.astype(np.uint8))
     if auto_show:
         """
         Jaemin Coding line
@@ -394,7 +395,9 @@ def display_instances_predict_whitemask( file_name, image, boxes, masks, class_i
     # temp_DIR = 'C:/Users/user/Desktop/LeeSac/Mask_RCNN/datasets/crosswalk/learning_datasets_inside_predict_mask/'
     # temp_DIR = 'C:/Users/user/Desktop/LeeSac/Mask_RCNN/datasets/crosswalk/learning_datasets_outside_predict_mask/'
 #     temp_DIR = 'C:/Users/user/Desktop/LeeSac/Mask_RCNN/datasets/crosswalk_v2/testset_predict_mask/'
-    temp_DIR = 'C:/Users/user/Desktop/temp_img/'
+#     temp_DIR = 'C:/Users/user/Desktop/temp_img/white500/'
+    temp_DIR = 'C:/Users/user/Desktop/temp_img/white1000_out/'
+
 
    
     
@@ -442,7 +445,8 @@ def display_instances_predict_whitemask( file_name, image, boxes, masks, class_i
         if show_mask:
             masked_image = apply_whitemask(masked_image, mask, color)
         
-    ax.imshow(masked_image.astype(np.uint8))
+#     ax.imshow(masked_image.astype(np.uint8))
+    
     if auto_show:
         """
         Jaemin Coding line
