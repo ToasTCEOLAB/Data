@@ -311,7 +311,7 @@ def display_instances_predict_mask( file_name, image, boxes, masks, class_ids, c
     # temp_DIR = 'C:/Users/user/Desktop/LeeSac/Mask_RCNN/datasets/crosswalk/learning_datasets_outside_predict/'
 #     temp_DIR = 'C:/Users/user/Desktop/LeeSac/Mask_RCNN/datasets/crosswalk_v2/testset_predict/'
 #     temp_DIR = 'C:/Users/user/Desktop/temp_img/original500/'
-    temp_DIR = 'C:/Users/user/Desktop/temp_img/original1000_out/'
+    temp_DIR = 'C:/Users/user/Desktop/result/person_pro/outside/'
     
     # Number of instances
     N = boxes.shape[0]
@@ -396,7 +396,7 @@ def display_instances_predict_whitemask( file_name, image, boxes, masks, class_i
     # temp_DIR = 'C:/Users/user/Desktop/LeeSac/Mask_RCNN/datasets/crosswalk/learning_datasets_outside_predict_mask/'
 #     temp_DIR = 'C:/Users/user/Desktop/LeeSac/Mask_RCNN/datasets/crosswalk_v2/testset_predict_mask/'
 #     temp_DIR = 'C:/Users/user/Desktop/temp_img/white500/'
-    temp_DIR = 'C:/Users/user/Desktop/temp_img/white1000_out/'
+    temp_DIR = 'C:/Users/user/Desktop/result/person_detection/outside/'
 
 
    
