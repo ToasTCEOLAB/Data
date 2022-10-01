@@ -1,0 +1,2 @@
+Train1에서 교수님의 요청으로 하나의 원본 사진, 9개의 Augmentation 사진을 한 쌍이라 하면,
+한 쌍에서 7개 3개로 나누어 각각 Train Data, Test Data로 분류하여 학습을 진행
